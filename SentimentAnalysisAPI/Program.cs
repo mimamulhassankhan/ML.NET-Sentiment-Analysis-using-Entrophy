@@ -25,9 +25,6 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
 });
 
-
-app.MapGet("/", )
-
 // Define prediction route & handler
 app.MapPost("/predict",
     async (PredictionEnginePool<SentimentModel.ModelInput, SentimentModel.ModelOutput> predictionEnginePool, SentimentModel.ModelInput input) =>

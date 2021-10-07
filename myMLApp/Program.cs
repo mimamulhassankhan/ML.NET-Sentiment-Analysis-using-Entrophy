@@ -9,7 +9,7 @@ namespace myMLApp
         {
             var sampleData = new SentimentModel.ModelInput()
             {
-                Col0 = "This restaurant was wonderful."
+                Col0 = Console.ReadLine()
             };
 
             // Load model and predict output of sample data
